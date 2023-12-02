@@ -8,8 +8,6 @@ Entrega para la semana 8 de MISO-4103 Automatización de Software - Equipo 32
 
 # Comentarios
 
----
-
 Decidí hacerme solo para esta entrega debido a problemas de colaboracion y comunicacion con los
 miembros de mi equipo anterior.
 
@@ -19,6 +17,8 @@ espero que el monitor que tome la nota de la presente entrega, tenga en cuenta e
 Sin embargo, para mostrar compromiso con la materia y debido al desempeño en la entrega de la semana 7,
 aspiro a cubrir todos los puntos de esta entrega de la mejor manera.
 (un compañero y yo trabajamos sin saber de los otros dos integrantes).
+
+Supongo que todos los semestres hay dramas de estos 😂, en fin.
 
 De antemano, muchas gracias por el tiempo que el revisor dedica a revisar la entrega.
 
@@ -81,6 +81,7 @@ Antes de ejecutar las pruebas, es necesario que se ingresen la siguiente informa
 </table>
 
 ### Ejemplo de llenado de credenciales
+
 <div align="center">
   <img src="doc/img.png" alt="Pagina de credenciales">
 </div>
