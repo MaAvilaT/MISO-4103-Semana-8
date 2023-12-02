@@ -30,119 +30,119 @@ Feature: Tags
 
     When user clicks on new tag
     And user fills tag name, color and description
-      | tag-name   | tag-color | description   |
-      | new-tag-01 | 978675    | My new tag-01 |
+      | tag-name      | tag-color | description   |
+      | washington-dc | 978675    | My new tag-01 |
     And clicks on save the new tag, returns to the tags page
     And the new tag should be listed in the tags page
-      | tag-name   | description   |
-      | new-tag-01 | My new tag-01 |
+      | tag-name      | description   |
+      | washington-dc | My new tag-01 |
     And user clicks on new tag
     And user fills tag name, color and description
-      | tag-name   | tag-color | description   |
-      | new-tag-02 | 456456    | My new tag-02 |
+      | tag-name | tag-color | description   |
+      | beijing  | 456456    | My new tag-02 |
     And clicks on save the new tag, returns to the tags page
     Then the new tags should be listed in the tags page
-      | tag-name   | description   |
-      | new-tag-01 | My new tag-01 |
-      | new-tag-02 | My new tag-02 |
+      | tag-name      | description   |
+      | washington-dc | My new tag-01 |
+      | beijing       | My new tag-02 |
 
 
   Scenario: user edits two tags one after another
 
     When user click on edit a tag
-      | tag-name   |
-      | new-tag-01 |
+      | tag-name      |
+      | washington-dc |
     And changes the description of the tag, saves it, switches back to tags
-      | tag-name   | edited-description   |
-      | new-tag-01 | Edited new tag-01!!! |
+      | tag-name      | edited-description   |
+      | washington-dc | Edited new tag-01!!! |
     And user click on edit a tag
-      | tag-name   |
-      | new-tag-02 |
+      | tag-name |
+      | beijing  |
     And changes the description of the tag, saves it, switches back to tags
-      | tag-name   | edited-description |
-      | new-tag-02 | Tag 02 edited...   |
+      | tag-name | edited-description |
+      | beijing  | Tag 02 edited...   |
     Then the new tags should be listed in the tags page
-      | tag-name   | description          |
-      | new-tag-01 | Edited new tag-01!!! |
-      | new-tag-02 | Tag 02 edited...     |
+      | tag-name      | description          |
+      | washington-dc | Edited new tag-01!!! |
+      | beijing       | Tag 02 edited...     |
 
 
   Scenario: user creates a three new tags, third tag is created after going to dashboard
 
     When user clicks on new tag
     And user fills tag name, color and description
-      | tag-name  | tag-color | description                         |
-      | ttt-gs-01 | 978675    | Some good description for ttt-gs-01 |
+      | tag-name         | tag-color | description                                |
+      | computer-science | 978675    | Some good description for computer-science |
     And clicks on save the new tag, returns to the tags page
     And the new tag should be listed in the tags page
-      | tag-name  | description                         |
-      | ttt-gs-01 | Some good description for ttt-gs-01 |
+      | tag-name         | description                                |
+      | computer-science | Some good description for computer-science |
     And user clicks on new tag
     And user fills tag name, color and description
-      | tag-name  | tag-color | description                         |
-      | ttt-gs-02 | 456456    | Some good description for ttt-gs-02 |
+      | tag-name            | tag-color | description                                   |
+      | systems-engineering | 456456    | Some good description for systems-engineering |
     And clicks on save the new tag, returns to the tags page
     And the new tags should be listed in the tags page
-      | tag-name  | description                         |
-      | ttt-gs-01 | Some good description for ttt-gs-01 |
-      | ttt-gs-02 | Some good description for ttt-gs-02 |
+      | tag-name            | description                                   |
+      | computer-science    | Some good description for computer-science    |
+      | systems-engineering | Some good description for systems-engineering |
     And user goes to dashboard page
     And user goes to tags page
     And user clicks on new tag
     And user fills tag name, color and description
-      | tag-name  | tag-color | description                         |
-      | ttt-gs-03 | 355847    | Some good description for ttt-gs-03 |
+      | tag-name             | tag-color | description                                    |
+      | software-engineering | 355847    | Some good description for software-engineering |
     And clicks on save the new tag, returns to the tags page
     And the new tags should be listed in the tags page
-      | tag-name  | description                         |
-      | ttt-gs-01 | Some good description for ttt-gs-01 |
-      | ttt-gs-02 | Some good description for ttt-gs-02 |
-      | ttt-gs-03 | Some good description for ttt-gs-03 |
+      | tag-name             | description                                    |
+      | computer-science     | Some good description for computer-science     |
+      | systems-engineering  | Some good description for systems-engineering  |
+      | software-engineering | Some good description for software-engineering |
 
 
   Scenario: user creates a four new tags, first tag is edited after second is created, third tag is created after going to dashboard
 
     When user clicks on new tag
     And user fills tag name, color and description
-      | tag-name  | tag-color | description                         |
-      | ftt-gs-01 | 978675    | Some good description for ftt-gs-01 |
+      | tag-name | tag-color | description                      |
+      | halo-1   | 978675    | Some good description for halo-1 |
     And clicks on save the new tag, returns to the tags page
     And the new tag should be listed in the tags page
-      | tag-name  | description                         |
-      | ftt-gs-01 | Some good description for ftt-gs-01 |
+      | tag-name | description                      |
+      | halo-1   | Some good description for halo-1 |
     And user clicks on new tag
     And user fills tag name, color and description
-      | tag-name  | tag-color | description                         |
-      | ftt-gs-02 | 456456    | Some good description for ftt-gs-02 |
+      | tag-name | tag-color | description                      |
+      | halo-2   | 456456    | Some good description for halo-2 |
     And clicks on save the new tag, returns to the tags page
     And user click on edit a tag
-      | tag-name  |
-      | ftt-gs-01 |
+      | tag-name |
+      | halo-1   |
     And changes the description of the tag, saves it, switches back to tags
-      | tag-name  | edited-description     |
-      | ftt-gs-01 | ftt-gs-01 01 edited... |
+      | tag-name | edited-description  |
+      | halo-1   | halo-1 01 edited... |
     And the new tags should be listed in the tags page
-      | tag-name  | description                         |
-      | ftt-gs-01 | ftt-gs-01 01 edited...              |
-      | ftt-gs-02 | Some good description for ftt-gs-02 |
+      | tag-name | description                      |
+      | halo-1   | halo-1 01 edited...              |
+      | halo-2   | Some good description for halo-2 |
     And user goes to dashboard page
     And user goes to tags page
     And user clicks on new tag
     And user fills tag name, color and description
-      | tag-name  | tag-color | description                         |
-      | ftt-gs-03 | 355847    | Some good description for ftt-gs-03 |
+      | tag-name | tag-color | description                      |
+      | halo-3   | 355847    | Some good description for halo-3 |
     And clicks on save the new tag, returns to the tags page
     And user clicks on new tag
     And user fills tag name, color and description
-      | tag-name  | tag-color | description                         |
-      | ftt-gs-04 | 348018    | Some good description for ftt-gs-04 |
+      | tag-name | tag-color | description                      |
+      | halo-4   | 348018    | Some good description for halo-4 |
     And clicks on save the new tag, returns to the tags page
     And the new tags should be listed in the tags page
-      | tag-name  | description                         |
-      | ftt-gs-01 | ftt-gs-01 01 edited...              |
-      | ftt-gs-02 | Some good description for ftt-gs-02 |
-      | ftt-gs-03 | Some good description for ftt-gs-03 |
-      | ftt-gs-04 | Some good description for ftt-gs-04 |
+      | tag-name | description                      |
+      | halo-1   | halo-1 01 edited...              |
+      | halo-2   | Some good description for halo-2 |
+      | halo-3   | Some good description for halo-3 |
+      | halo-4   | Some good description for halo-4 |
 
 
   Scenario: user attempts to create a tag with only numbers in its description
@@ -173,19 +173,19 @@ Feature: Tags
   Scenario: user deletes tags created in various different scenarios
 
     When deleting these tags
-      | tag-name          | description                                                       |
-      | tag-from-internal | A test tag created with cypress from internal tags page           |
-      | new-tag-01        | Edited new tag-01!!!                                              |
-      | new-tag-02        | Tag 02 edited...                                                  |
-      | ttt-gs-01         | Some good description for ttt-gs-01                               |
-      | ttt-gs-02         | Some good description for ttt-gs-02                               |
-      | ttt-gs-03         | Some good description for ttt-gs-03                               |
-      | ftt-gs-01         | Some good description for ftt-gs-01                               |
-      | ftt-gs-02         | ftt-gs-0202 edited...                                             |
-      | ftt-gs-03         | Some good description for ftt-gs-03                               |
-      | ftt-gs-04         | Some good description for ftt-gs-04                               |
-      | enochian-reading  | 62783923768906278392376890627839237689062783923768906278392376890 |
-      | beautiful-onyx    | Onyx is one of the greatest materials on this universe!           |
+      | tag-name             | description                                                       |
+      | tag-from-internal    | A test tag created with cypress from internal tags page           |
+      | washington-dc        | Edited new tag-01!!!                                              |
+      | beijing              | Tag 02 edited...                                                  |
+      | computer-science     | Some good description for computer-science                        |
+      | systems-engineering  | Some good description for systems-engineering                     |
+      | software-engineering | Some good description for software-engineering                    |
+      | halo-1               | Some good description for halo-1                                  |
+      | halo-2               | halo-202 edited...                                                |
+      | halo-3               | Some good description for halo-3                                  |
+      | halo-4               | Some good description for halo-4                                  |
+      | enochian-reading     | 62783923768906278392376890627839237689062783923768906278392376890 |
+      | beautiful-onyx       | Onyx is one of the greatest materials on this universe!           |
     Then those tags should not be displayed in the tags page
 
 
