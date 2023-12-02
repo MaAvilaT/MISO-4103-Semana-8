@@ -100,7 +100,8 @@ npm install      # Instalamos las dependencias
 
 - Es un prerrequisito tener GHOST "arriba" y con las credenciales que se indican.
 
-Luego de instaladas las dependencias, procedemos a ejecutar las pruebas con el siguiente comando.
+Luego de instaladas las dependencias y dentro de la carpeta `./cypress-e2e`,
+procedemos a ejecutar las pruebas con el siguiente comando.
 
 ```bash
 # recomendado para que no aparezcan advertencias de cypress
