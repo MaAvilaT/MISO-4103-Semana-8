@@ -28,7 +28,7 @@ Adicionalmente, ya que se solicita codigo fuente ejecutable, he realizado prueba
 la **plantilla estrategia de pruebas** para que estas sean ejecutadas.
 
 Finalmente, he de mencionar que he decidido trabajar con una version de GHOST que en el grupo no habíamos
-tocado antes, GHOST 5.70. Para que la entrega se diferencie mejor.
+tocado antes, GHOST 5.70.
 
 ---
 
